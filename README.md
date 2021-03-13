@@ -20,5 +20,11 @@ wget https://homes.esat.kuleuven.be/~jsimm/nmr_data/nmr_webo.npy
 
 Then train a GraphInform for 100 epochs using 3-radius heads:
 ```
-python train.py --data_file nmr_webo.npy --folding_file folding0.npy --head_radius 3 3 3 3 3 3 --layers 2 --hidden_size 256 --hidden_dropout 0.1 --num_epochs 100 --lr_steps 50 80
+python train.py --data_file nmr_webo.npy --folding_file folding0.npy \
+  --head_radius 3 3 3 3 3 3 \
+  --layers 2 \
+  --hidden_size 256 \
+  --hidden_dropout 0.1 \
+  --num_epochs 100 \
+  --lr_steps 50 80
 ```
