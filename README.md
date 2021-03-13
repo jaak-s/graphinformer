@@ -18,7 +18,7 @@ wget https://homes.esat.kuleuven.be/~jsimm/nmr_data/folding2.npy
 wget https://homes.esat.kuleuven.be/~jsimm/nmr_data/nmr_webo.npy
 ```
 
-Then train a GraphInform for 100 epochs using 3-radius heads:
+Then train a GraphInformer model on the NMR shift data for 100 epochs using 3-distance attention heads:
 ```
 python train.py --data_file nmr_webo.npy --folding_file folding0.npy \
   --head_radius 3 3 3 3 3 3 \
