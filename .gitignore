@@ -1,0 +1,9 @@
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+*.png
+*.sh.e*
+*.sh.o*
+*.npy
+runs/
+runs_30epochs/
